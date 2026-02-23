@@ -82,23 +82,3 @@ def path_in_collision(path,object_list):
             if(ee_in_collision(our_ees[k],object_list[j][0],object_list[j][1]) == True):
                 return True
     return False
-
-path_1 = [
-    [0,0,0],
-    [0,0,-1/5*math.pi/2],
-    [0,0,-2/5*math.pi/2],
-    [0,0,-3/5*math.pi/2],
-    [0,0,-4/5*math.pi/2],
-    [0,0,-5/5*math.pi/2],
-]
-object_list_1 =[
-    [np.array([111110,0,0]),0.2],
-    [np.array([111110,0,0]),0.2],
-]
-object_list_2 =[
-    [np.array([1,1,1]),0.2],
-    [np.array([0.7,0.3,0]),0.2],
-]
-
-print("Hi!")
-print(path_in_collision(path_1,object_list_2))
